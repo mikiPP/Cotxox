@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <div class="center-block">
+  <h1> The number of your fare is: {{carreraService.getFare().getId()}}</h1>
+    <div class="list-group">
+      <ul>
+      <li> Your driver's name is: {{carreraService.getFare().getDriver().getName()}}</li>
+      <li> Your fare begin in:  {{carreraService.getFare().getOrigin()}} and your final destination is:
+        {{carreraService.getFare().getDestination()}} </li>
+        <li> The final cost is : {{carreraService.getFare().getCost()}} €</li>
+        <li> Your tip is  : {{carreraService.getFare().getTip()}} € </li>
+        <li> And you have rated your driver with  {{carreraService.getFare().getRate()}} out of 5</li>
+      </ul>
+    </div>
+      <a routerLink="/home">Wanna go back home?</a>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

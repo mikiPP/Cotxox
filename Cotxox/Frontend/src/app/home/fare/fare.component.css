@@ -1,0 +1,28 @@
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched{
+  border: 3px solid red;
+}
+
+.row{margin-top: 50px;}
+
+form{margin-top: 5px;}
+
+
+a{margin-left: 1%;
+  color: dodgerblue;
+}
+#signedUp{margin-top: 4%;
+  padding-left: 0;}
+
+a:hover{color:black;}
+
+#signupFailed{color: red;
+  padding-left: 0;}
+
+h1{font-max-size: 0.75em;}
+
+.multiple{margin-left: 0;
+          padding-left: 0;}
+
+#CarreraFailed{color: red;
+  padding-left: 0;}

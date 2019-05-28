@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="table-responsive row">
+  <div class="col-md-12">
+    <h1 class="jumbotron">These are our fees!</h1>
+    <p> With these fees we will calculate the price of your fare! </p>
+  </div>
+  <div class="col-xs-12" >
+      <table class="table table-striped">
+          <tr *ngFor="let fee of getFees();">
+          <td>{{fee.getName()}}</td>
+          <td id="number">{{fee.getCost()}}€</td>
+          </tr>
+      </table>
+  </div>
+</div>
+<app-footer></app-footer>

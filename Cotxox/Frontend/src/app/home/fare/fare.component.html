@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-8 col-sm-offset-1 col-md-offset-2">
+    <h1 class="modal-title">Where do you want to go? we will take you</h1>
+    <span class="panel-title">Just fill this form!</span>
+    <form (ngSubmit)="onFare(f)" #f="ngForm" >
+      <div class="form-group">
+        <label for="origin">Origin</label>
+        <input type="text" id="origin" name="origin" ngModel class="form-control"
+               placeholder="We only got Palma for now" required
+               ngNativeValidate="validateUsername()" >
+      </div>
+      <div class="form-group">
+        <label class="col-xs-12 multiple" for="destination" >destination</label>
+        <select ngModel id="destination" name="destination" >
+          <option *ngFor="let destinations of fareService.getDestinations().keys()"
+                  value="{{destinations}}">{{destinations}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="creditCard">Introduce your credit card! </label>
+        <input type="text" id="creditCard" name="creditCard" ngModel class="form-control" placeholder="creditCard" required
+               #creditCard = "ngModel">
+        <p *ngIf="!creditCard.valid && creditCard.touched"> Please, enter a valid credit card!</p>
+      </div>
+      <div class="form-group">
+        <label class="multiple col-xs-12"  for="driver" >driver</label>
+        <select ngModel id="driver" name="driver" >
+          <option *ngFor="let driverActive of driverService.getActiveDrivers()"
+                  value="{{driverActive.getName()}}">{{driverActive.getName()}}</option>
+        </select>
+      </div>
+      <button class="btn btn-info col-md-5" type="submit" [disabled]="!f.valid" >Take me!</button>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

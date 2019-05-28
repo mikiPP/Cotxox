@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="table-responsive row" id="border">
+<div class="col-xs-12">
+    <div class="col-xs-12">
+    <h1 class="jumbotron"> {{driverService.getConductor().getName()}}</h1>
+    </div>
+  <div class="col-xs-12" id="contenido">
+    <div class="col-sm-12 col-md-4">
+        <img class="img img-responsive"  src="../../../../assets/driver.png">
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Question </th>
+            <th scope="col">Answer </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Car model: </td>
+            <td>{{driverService.getConductor().getModel()}}</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td> Car plate: </td>
+            <td>{{driverService.getConductor().getCarPlate()}}</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Rate: </td>
+            <td>{{driverService.getConductor().getRate()}}/5</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,29 @@
+<div class="row"><!-- ejecutar asi todas las navbars para que no se coma la primera linea -->
+  <div class="col-xs-12">
+  <app-header></app-header>
+  </div>
+  <div class="col-xs-8">
+    <span class="clearfix"></span>
+  <div class="center-block">
+    <h1>Tell us how nice the fare was!</h1>
+    <p> We hope that your fare was enjoyable and u will come back soon!</p>
+    <form (ngSubmit)="onFarePost(form)" #form="ngForm">
+      <div class="form-group">
+        <label for="rate"></label>
+        <input type="number" id="rate" name="rate" min="1" max="5" ngModel class="form-control"
+               placeholder="Rate our driver !">
+      </div>
+      <div class="form-group">
+        <label for="tip"></label>
+        <input type="number" id="tip" name="tip" min="1" max="250" ngModel class="form-control"
+               placeholder="Here,if you wish, let your tip ">
+      </div>
+<!--      <span *ngIf="!form.valid && form.touched" class="help-block"> Please enter your username and your password to-->
+<!--        get logged in!</span>-->
+      <button class="btn btn-info" type="submit" [disabled]="!form.valid">End your fare!</button>
+
+    </form>
+  </div>
+  </div>
+</div>
+<app-footer></app-footer>

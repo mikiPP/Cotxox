@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="jumbotron">These are our drivers!</h1>
+    <p>These are our drivers!,if you want, you can click over them to know more about him or her </p>
+
+    <ul class="nav nav-tabs">
+      <li
+        *ngFor="let driver of getDrivers();let i = index">
+         <a [routerLink]="i + 1" (click)="onDriver(i+1)" style="cursor: pointer;">{{driver.getName()}}</a></li>
+    </ul>
+  </div>
+</div>
+<app-footer></app-footer>

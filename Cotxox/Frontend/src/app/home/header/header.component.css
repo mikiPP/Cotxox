@@ -1,0 +1,17 @@
+body {
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+nav{background: black;}
+#user,.caret{color: white;}
+.navbar-default, .navbar-brand{color: white}
+.glyphicon-search{color: black;}
+.navbar-default .navbar-nav>li>a{color: whitesmoke;}
+button,span > .icon-bar{color: whitesmoke;}
+
+button > .icon-bar{background-color: whitesmoke;}
+.navbar-toggle:hover {
+  background-color: black;
+}
+
+a{padding-top: 5px;}

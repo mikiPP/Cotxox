@@ -1,0 +1,22 @@
+.row{margin-top: 5%;}
+.jumbotron{background: none;
+          padding-left: 0;}
+
+h1{padding-left: 0;}
+a{color: black;}
+
+
+.nav-tabs {
+  border-bottom: solid 3px black;
+}
+
+.nav-tabs>li>a:hover {
+  border-color: black;
+}
+
+.nav-tabs>li>a:hover{
+  background-color: black;
+  color: white;
+}
+
+

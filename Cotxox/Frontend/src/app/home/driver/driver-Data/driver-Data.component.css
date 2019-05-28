@@ -1,0 +1,25 @@
+.jumbotron{background: none;}
+
+.row{margin-top: 5%;
+    text-align: -webkit-center;}
+
+
+.table>tbody>tr>td {
+  border-color: black;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd){
+  background-color: black;
+  color: whitesmoke;
+}
+
+.table-striped>tbody>tr:nth-of-type(even){
+  background-color: whitesmoke;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    border: 0 none;
+  }
+}
