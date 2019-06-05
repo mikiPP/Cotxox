@@ -13,7 +13,6 @@ import java.util.List;
 /**
  * Controller para el conductor,tiene 3 endpoints, el primero devuelve todos los conductores,el segundo un conductor
  * por su id y el tercero,devuelve una lista de todos los conductores disponibles.
- *
  */
 
 @RequestMapping(path = "/api")

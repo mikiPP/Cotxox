@@ -15,7 +15,6 @@ import java.util.List;
 /**
  * Controller para usuarios, tiene 3 endpoints.El primero sirve para registrar un nuevo usuario.
  * El segundo para que se pueda logear y el último devuelve todos los usuarios.
- *
  */
 
 
@@ -28,7 +27,6 @@ public class UserController {
 
     @PostMapping("/signup")
     public String signup(@RequestBody UserUpesertDto user) {
-        System.out.println("llega");
         return (userService.addUser(user)) ? "Added" : "The user already exists";
 
     }
@@ -41,7 +39,7 @@ public class UserController {
 
     @GetMapping("/all")
     public List<UserDto> getAll() {
-        return userService.getAll();
+        return userService.findAll();
     }
 
 }

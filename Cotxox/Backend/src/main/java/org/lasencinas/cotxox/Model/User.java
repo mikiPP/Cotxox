@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
- *Entity para users, usuarios en español
+ * Entity para users, usuarios en español
  */
 
 @Getter

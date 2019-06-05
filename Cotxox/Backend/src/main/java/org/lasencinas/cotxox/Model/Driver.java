@@ -54,7 +54,7 @@ public class Driver {
 
 
     public void setRate(double rate) {
-        this.rate = (this.rate + getRate()) / getValuations();
+        this.rate = (rate + getRate()) / getValuations();
     }
 
     public void setValuations(int valuations) {

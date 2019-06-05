@@ -56,7 +56,7 @@ public class UserServiceImpl implements UserService {
     }
 
 
-    public List<UserDto> getAll() {
+    public List<UserDto> findAll() {
         List<UserDto> users = new ArrayList<>();
         userRepository.findAll().forEach(user -> {
             users.add(userConverter.toApiModel(user));
@@ -67,7 +67,6 @@ public class UserServiceImpl implements UserService {
 
 
     public boolean login(String username, String password) {
-
 
 
         if (userRepository.findByUsername(username).isPresent()) {
@@ -106,10 +105,7 @@ public class UserServiceImpl implements UserService {
 
     private boolean validUser(User user) {
 
-
-            return !userRepository.findByUsername(user.getUsername()).isPresent()  && !this.findByEmail(user.getEmail());
-
-
+        return !userRepository.findByUsername(user.getUsername()).isPresent() && !this.findByEmail(user.getEmail());
 
     }
 

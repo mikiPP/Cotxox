@@ -22,4 +22,6 @@ public interface DriverService {
     List<DriverDto> findAllbyBussy();
 
     void putDriver(Driver driver, double rate);
+
+
 }

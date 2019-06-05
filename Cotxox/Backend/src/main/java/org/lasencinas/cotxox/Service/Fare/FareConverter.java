@@ -1,9 +1,9 @@
 package org.lasencinas.cotxox.Service.Fare;
 
 import org.lasencinas.cotxox.Model.Driver;
-import org.lasencinas.cotxox.Model.Fare;
 import org.lasencinas.cotxox.Model.Dto.Fare.FareDto;
 import org.lasencinas.cotxox.Model.Dto.Fare.FareUpsertDto;
+import org.lasencinas.cotxox.Model.Fare;
 import org.lasencinas.cotxox.Model.User;
 import org.lasencinas.cotxox.Service.Driver.DriverService;
 import org.lasencinas.cotxox.Service.User.UserService;
